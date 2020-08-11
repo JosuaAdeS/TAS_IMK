@@ -1088,6 +1088,7 @@ ul.no-bullet, ol.no-bullet {
 
 .small-up-4 > .column, .small-up-4 > .columns {
   float: left;
+  padding-left: 33%;
   width: 25%; }
   .small-up-4 > .column:nth-of-type(1n), .small-up-4 > .columns:nth-of-type(1n) {
     clear: none; }
@@ -1715,7 +1716,8 @@ ul.no-bullet, ol.no-bullet {
     border-color: transparent;
     background-color: transparent; }
   .button.clear, .button.clear.disabled, .button.clear[disabled], .button.clear.disabled:hover, .button.clear[disabled]:hover, .button.clear.disabled:focus, .button.clear[disabled]:focus {
-    color: #1779ba; }
+    color: #002952;
+    }
   .button.clear:hover, .button.clear:focus {
     color: #0c3d5d; }
   .button.clear.primary, .button.clear.primary.disabled, .button.clear.primary[disabled], .button.clear.primary.disabled:hover, .button.clear.primary[disabled]:hover, .button.clear.primary.disabled:focus, .button.clear.primary[disabled]:focus {
@@ -4235,6 +4237,7 @@ html.is-reveal-open {
   width: 300px;
   height: 30px;
   margin-top: 10px;
+  border-color: #002952;
 }
 
 .button-rounded-hover {
