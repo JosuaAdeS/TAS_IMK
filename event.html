@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Walkitic </title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<style type="text/css">
+	.switch {
+	  position: relative;
+	  display: inline-block;
+	  width: 60px;
+	  height: 34px;
+	}
+
+	.switch input { 
+	  opacity: 0;
+	  width: 0;
+	  height: 0;
+	}
+
+	.slider {
+	  position: absolute;
+	  cursor: pointer;
+	  top: 0;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	  background-color: #ccc;
+	  -webkit-transition: .4s;
+	  transition: .4s;
+	}
+
+	.slider:before {
+	  position: absolute;
+	  content: "";
+	  height: 26px;
+	  width: 26px;
+	  left: 4px;
+	  bottom: 4px;
+	  background-color: white;
+	  -webkit-transition: .4s;
+	  transition: .4s;
+	}
+
+	input:checked + .slider {
+	  background-color: #fb7221;
+	}
+
+	input:focus + .slider {
+	  box-shadow: 0 0 1px #2196F3;
+	}
+
+	input:checked + .slider:before {
+	  -webkit-transform: translateX(26px);
+	  -ms-transform: translateX(26px);
+	  transform: translateX(26px);
+	}
+
+	/* Rounded sliders */
+	.slider.round {
+	  border-radius: 34px;
+	}
+
+	.slider.round:before {
+	  border-radius: 50%;
+	}
+	</style>
+</head>
+<body>
+	<div class="row" style="padding:30px;">
+		<div style="float:left;">
+			<img src="image/logo_color.png" style="width:180px;">
+		</div>
+		<div style="float:right;">
+			<div class="col-sm-6" >
+				<font> Bantuan </font>
+			</div>
+			<div class="col-sm-6" >
+				<img src="image/login2.png" style="width:25px;">
+			</div>
+		</div>
+	</div>
+	<div class="row" style="margin-top:-30px;">
+		<hr style="height:3px;background-color:#eaebeb;">
+	</div>
+
+	<div class="row">
+		<div class="container">
+			<div>
+				<font style="font-size:30px;"> Buat Event </font>
+			</div>
+		</div>
+
+		<div class="container" style="margin-top:20px;padding:30px;">
+			<div>
+				<font style="font-size:20px;"> Event </font>
+				<div style="padding:30px;margin-top:20px;border-style:solid;border-color:#a5adb7;border-radius:15px;padding-bottom:50px;">
+					<div style="border-radius:15px;border-style:dotted;padding-bottom:30px;border-color:#a5adb7;">
+						<center>
+							<div style="margin-top:50px;">
+								<img src="image/plus-orange.png">
+							</div>
+							<div>
+								<font style="color:#a5adb7;font-size:20px;"> Unggah Poster </font><br>
+								<font style="color:#a5adb7;font-size:17px;"> Direkomendasikan 724x340px dan tidak lebih dari 2mb </font>
+							</div>
+						</center>
+					</div>
+
+					<div style="margin-top:20px;">
+						<font style="font-size:20px;color:#a5adb7;"> Nama Event </font>
+						<input type="text" style="border:none;border-bottom-style:solid;border-color:#a5adb7;border-width:thin;width:80%;margin-left:70px;outline:none;" placeholder="Masukkan Nama Event ">
+					</div>
+
+					<div style="margin-top:20px;">
+						<font style="font-size:20px;color:#a5adb7;"> Kategori (Maks 3) </font>
+							<button style="margin-left:20px;border-radius:15px;border-style:solid;border-color:#a5adb7;border-width:thin;padding:5px;width:100px;outline:none;"> Festival </button>
+							<button style="margin-left:20px;border-radius:15px;border-style:solid;border-color:#a5adb7;border-width:thin;padding:5px;width:100px;outline:none;"> Konser </button>
+							<button style="margin-left:20px;border-radius:15px;border-style:solid;border-color:#a5adb7;border-width:thin;padding:5px;width:100px;outline:none;"> Workshop </button>
+							<div style="margin-left:161px;margin-top:10px;">
+								<button style="margin-left:20px;border-radius:15px;border-style:solid;border-color:#a5adb7;border-width:thin;padding:5px;width:100px;outline:none;"> Seminar </button>
+								<button style="margin-left:20px;border-radius:15px;border-style:solid;border-color:#a5adb7;border-width:thin;padding:5px;width:100px;outline:none;color:white;background-color:#fb7221;" > Teather </button>
+								<button style="margin-left:20px;border-radius:15px;border-style:solid;border-color:#a5adb7;border-width:thin;padding:5px;width:100px;outline:none;"> Musical </button>
+							</div>
+					</div>
+
+					<div style="margin-top:20px;">
+						<font style="font-size:20px;color:#a5adb7;"> Deskripsi Event </font>
+						<textarea style="width:80%;margin-left:40px;height:100px;vertical-align:middle;border-radius:15px;">
+							
+						</textarea>
+					</div>
+
+					<div style="margin-top:20px;">
+						<font style="font-size:20px;color:#a5adb7;"> Pilih Tanggal </font>
+						<input type="date" style="margin-left:70px;">
+					</div>
+
+					<div style="margin-top:20px;">
+						<font style="font-size:20px;color:#a5adb7;"> Waktu Mulai </font>
+						<select style="margin-left:72px;padding:10px;width:150px;border-radius:15px;outline:none;">
+							<option> Jam Mulai </option>
+							<option> 08.00 </option>
+							<option> 09.00 </option>
+							<option> 10.00 </option>
+							<option> 11.00 </option>
+						</select>
+					</div>
+
+					<div style="margin-top:20px;">
+						<font style="font-size:20px;color:#a5adb7;"> Waktu Selesai </font>
+						<select style="margin-left:54px;padding:10px;width:150px;border-radius:15px;outline:none;">
+							<option> Jam Selesai </option>
+							<option> 18.00 </option>
+							<option> 19.00 </option>
+							<option> 20.00 </option>
+							<option> 21.00 </option>
+						</select>
+					</div>
+
+					<div style="margin-top:20px;">
+						<font style="font-size:20px;color:#a5adb7;"> Lokasi </font>
+						<label class="switch" style="margin-left:120px;">
+							  <input type="checkbox">
+							  <span class="slider round"></span>
+
+						</label>
+							<font> Online</font>
+						
+					</div>
+
+					<div style="margin-top:20px;">
+						<font style="font-size:20px;color:#a5adb7;"> Alamat Url </font>
+						<input type="text" style="border:none;border-bottom-style:solid;border-color:#a5adb7;border-width:thin;width:80%;margin-left:80px;outline:none;" placeholder="Masukkan Alamat URL ">
+					</div>
+
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="container" style="margin-top:20px;padding:30px;">
+			<div>
+				<font style="font-size:20px;"> Penyelenggara </font>
+				<div style="padding:30px;margin-top:20px;border-style:solid;border-color:#a5adb7;border-radius:15px;padding-bottom:50px;">		
+				<div>
+					<font> Diselenggarakan Oleh </font>
+				</div>
+					<div style="height:100px;width:10%;border-radius:100px;margin-top:20px;border-style:dotted;float:left;">
+						<img src="image/Upload.png" style="padding:20px;">
+					</div>
+					<div style="height:100px;flaot:left;width:100%;padding:30px;margin-left:100px;">
+						<font style="font-size:20px;color:#a5adb7;"> Nama Organizer </font>
+						<input type="text" style="border:none;border-bottom-style:solid;border-color:#a5adb7;border-width:thin;width:70%;margin-left:70px;outline:none;" placeholder="Masukkan Nama Organizer ">
+					</div>
+					<div style="height:100px;flaot:left;width:100%;padding:30px;margin-left:100px;margin-top:-50px;">
+						<font style="font-size:20px;color:#a5adb7;"> Nomor Telepon </font>
+						<input type="text" style="border:none;border-bottom-style:solid;border-color:#a5adb7;border-width:thin;;margin-left:80px;width:70%;outline:none;" placeholder="Masukkan Nomor Telepon ">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container" style="margin-top:20px;padding:30px;">
+			<div>
+				<font style="font-size:20px;"> Tiket </font>
+				<div style="padding:30px;margin-top:20px;border-style:solid;border-color:#a5adb7;border-radius:15px;padding-bottom:50px;">		
+				<div>
+					<font> Diselenggarakan Oleh </font>
+				</div>
+					<div style="margin-top:20px;">
+						<font style="font-size:20px;color:#a5adb7;"> Jenis Tiket </font>
+						<label class="switch" style="margin-left:80px;">
+							  <input type="checkbox">
+							  <span class="slider round"></span>
+
+						</label>
+							<font> Gratis </font>
+						
+					</div>
+
+					<div style="margin-top:20px;">
+						<font style="font-size:20px;color:#a5adb7;"> Nama Tiket </font>
+						<input type="text" style="border:none;border-bottom-style:solid;border-color:#a5adb7;border-width:thin;width:80%;margin-left:80px;outline:none;" placeholder="Masukkan Nama Tiket ">
+					</div>
+					<div style="margin-top:20px;">
+						<font style="font-size:20px;color:#a5adb7;"> Banyak Tiket </font>
+						<input type="text" style="border:none;border-bottom-style:solid;border-color:#a5adb7;border-width:thin;width:80%;margin-left:70px;outline:none;" placeholder="Masukkan Jumlah Tiket ">
+					</div>
+					<div style="margin-top:20px;">
+						<font style="font-size:20px;color:#a5adb7;"> Deskripsi Tiket </font>
+						<input type="text" style="border:none;border-bottom-style:solid;border-color:#a5adb7;border-width:thin;width:80%;margin-left:55px;outline:none;" placeholder="Deskripsi Tiket ">
+					</div>
+
+					<div style="margin-top:20px;">
+						<div class="col-2" style="float:left;">
+							<font style="font-size:20px;color:#a5adb7;"> Tanggal Mulai Jual Tiket </font>
+						</div>
+						
+						<div class="col-sm-4" style="float:left;margin-left:20px;">
+							<input type="date" class="form-control">
+						</div>
+						<div class="col-sm-4" style="float:left;">
+							<select style="margin-left:20px;padding:10px;width:150px;border-radius:15px;outline:none;">
+								<option> Jam Mulai </option>
+								<option> 08.00 </option>
+								<option> 09.00 </option>
+								<option> 10.00 </option>
+								<option> 11.00 </option>
+							</select>
+						</div>
+					</div>
+
+					<div style="margin-top:70px;">
+						<div class="col-2" style="float:left;">
+							<font style="font-size:20px;color:#a5adb7;"> Tanggal Mulai Jual Tiket </font>
+						</div>
+						
+						<div class="col-sm-4" style="float:left;margin-left:20px;">
+							<input type="date" class="form-control">
+						</div>
+						<div class="col-sm-4" style="float:left;">
+							<select style="margin-left:20px;padding:10px;width:150px;border-radius:15px;outline:none;">
+								<option> Jam Selesai </option>
+								<option> 18.00 </option>
+								<option> 19.00 </option>
+								<option> 20.00 </option>
+								<option> 21.00 </option>
+							</select>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<a href="dasboard_jual.html">
+			<div class="container">
+				<div style="float:right">
+					<button style="padding:20px;border-radius:15px;width:200px;outline:none;color:white;background-color:#fb7221;border:none;"> 
+						<font style="font-weight:bold;"> Buat Event Sekarang </font>
+					</button>
+				</div>
+			</div>
+		</a>
+
+	</div>
+</body>
+</html>

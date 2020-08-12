@@ -1,9 +1,377 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-	<h1>Ini menu setelah login</h1>
-</body>
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walkitic</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/foundation-float.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <header>
+      <div id="offcanvas-full-screen" class="offcanvas-full-screen" data-off-canvas data-transition="overlap" >
+        <div class="offcanvas-full-screen-inner">
+          <button class="offcanvas-full-screen-close" aria-label="Close menu" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+          </button>
+
+          <ul class="offcanvas-full-screen-menu">
+            <li><a href="home_pembeli2.html">My Profile</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Sign out</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="off-canvas-content" data-off-canvas-content>
+        <div class="top-bar" style="background-color: #002952">
+          <div class="top-bar-title">        
+            <img src="image/logo.png" width="150">
+          </div>
+          <div class="top-bar-right">
+            <a href="home_pembeli2.html" style="color: #fefefe;margin-right: 40px;font-size: 20px">Home</a>
+            <a href="buat_event2.html" style="color: #fefefe;margin-right: 40px;font-size: 20px">Buat Event</a>
+            <a href="#" style="color: #fefefe;margin-right: 40px"><img src="image/login.png" width="30">User001</a>
+            <button class="menu-icon" type="button" data-toggle="offcanvas-full-screen" style="margin-right: 20px"></button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+      <div class="orbit-wrapper">
+        <div class="orbit-controls">
+          <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+          <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+        </div>
+        <ul class="orbit-container">
+          <li class="is-active orbit-slide">
+            <figure class="orbit-figure">
+              <img class="orbit-image" src="image/poster/brighter.jpg" alt="Space" style="margin-top: 2%">
+            </figure>
+          </li>
+          <li class="orbit-slide">
+            <figure class="orbit-figure">
+              <img class="orbit-image" src="image/poster/festival_jomblo_run.png" alt="Space"style="margin-top: 2%">
+            </figure>
+          </li>
+          <li class="orbit-slide">
+            <figure class="orbit-figure">
+              <img class="orbit-image" src="image/poster/konser_night.png" alt="Space" style="margin-top: 2%">
+            </figure>
+          </li>
+          <li class="orbit-slide">
+            <figure class="orbit-figure">
+              <img class="orbit-image" src="image/poster/workshop_finansial.png" alt="Space" style="margin-top: 2%">
+          </li>
+        </ul>
+      </div>
+      <nav class="orbit-bullets" style="margin-top: 3%">
+        <button class="is-active" data-slide="0">
+          <span class="show-for-sr">First slide details.</span>
+          <span class="show-for-sr" data-slide-active-label>Current Slide</span>
+        </button>
+        <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+        <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+        <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+      </nav>
+    </div>
+    <div class="grid-container">
+      <h2 style="color: #002952">Recomended</h2>
+      <div style="width: 1170px; height:0px; border:1px lightgray solid;"></div>
+    </div>
+    <div class="grid-container">
+      <h3 style="padding-top: 5px;color: #002952;padding-bottom: 15px"></h3>
+      <div class="grid-x grid-margin-x small-up-1 medium-up-4">
+        <div class="cell">
+          <a href="brighter2.html">
+            <div class="card">
+              <img src="image/poster/brighter.jpg">
+              <div class="card-section">
+              <h4><b>JPCC Brighter</b></h4>
+                <h7 style="padding top: 5px; color: #fb7221"><b>Konser</b></h7>
+                <p><b>Tanggal dan Waktu</b>
+                  <br><img src="image/calendar.png" width="15"> 30 Juli 2020
+                  <br><img src="image/clock.png" width="15"> 09.00 - 21.00
+                  <br><b>Lokasi</b>
+                  <br><img src="image/location.png" width="15"> Istora Senayan Gelora Bung Karno (GBK), DKI Jakarta</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <div class="cell">
+          <div class="card">
+            <img src="image/poster/festival_marathon.png">
+        <div class="card-section">
+        <h4><b>City Marathon</b></h4>
+        <h7 style="padding top: 5px; color: #fb7221"><b>Olahraga</b></h7>
+          <p> <b>Tanggal dan Waktu</b>
+            <br><img src="image/calendar.png" width="15"> 26 Oktober 2014
+            <br><img src="image/clock.png" width="15"> 07.00 - Selesai
+            <br><b>Lokasi</b>
+            <br><img src="image/location.png" width="15"> National Monument (MONAS), DKI Jakarta
+          </p>
+            </div>
+          </div>
+        </div>
+        <div class="cell">
+          <div class="card">
+            <img src="image/poster/konser_night.png">
+        <div class="card-section">
+        <h4><b>Concert Night</b></h4>
+          <h7 style="padding top: 5px; color: #fb7221"><b>Konser</b></h7>
+          <p> <b>Tanggal dan Waktu</b>
+            <br><img src="image/calendar.png" width="15"> 23 September 2018
+            <br><img src="image/clock.png" width="15"> 10.00 - 15.00
+            <br><b>Lokasi</b>
+            <br><img src="image/location.png" width="15"> 123 Avenue ST, New York, United States
+          </p>
+            </div>
+          </div>
+        </div>
+        <div class="cell">
+          <div class="card">
+            <img src="image/poster/workshop_finansial.png">
+        <div class="card-section">
+        <h4><b>Workshop Finance</b></h4>
+        <h7 style="padding top: 5px; color: #fb7221"><b>Workshop</b></h7>
+          <p  style="padding-bottom: 25px"> <b>Tanggal dan Waktu</b>
+            <br><img src="image/calendar.png" width="15"> 30 Maret 2020
+            <br><img src="image/clock.png" width="15"> 20.00 - Selesai
+            <br><b>Lokasi</b>
+            <br><img src="image/calendar.png" width="15"> Link WEB
+          </p>
+            </div>
+          </div>
+        </div>
+        <div class="cell" style="padding-top: 15px">
+          <div class="card">
+            <img src="image/poster/konser_budaya_alam.png">
+        <div class="card-section">
+        <h4><b>Konser Budaya Alam Nusantara</b></h4>
+        <h7 style="padding top: 5px; color: #fb7221"><b>Konser</b></h7>
+          <p> <b>Tanggal dan Waktu</b>
+            <br><img src="image/calendar.png" width="15"> 06 Mei 2018
+            <br><img src="image/clock.png" width="15"> 14.00 - 18.00
+            <br><b>Lokasi</b>
+            <br><img src="image/location.png" width="15"> Ciputra Artpreneur
+          </p>
+            </div>
+          </div>
+        </div>
+        <div class="cell"style="padding-top: 15px">
+          <div class="card">
+            <img src="image/poster/dramus_peron.png">
+        <div class="card-section">
+        <h4><b>Drama Musikal Peron</b></h4>
+        <h7 style="padding top: 5px; color: #fb7221"><b>Drama Musikal</b></h7>
+          <p> <b>Tanggal dan Waktu</b>
+            <br><img src="image/calendar.png" width="15"> 11 & 12 Oktober 2019
+            <br><img src="image/clock.png" width="15"> 14.30 - 19.30
+            <br><b>Lokasi</b>
+            <br><img src="image/location.png" width="15"> Graha Bhakti Budaya, Jakarta
+          </p>
+            </div>
+          </div>
+        </div>
+        <div class="cell"style="padding-top: 15px">
+          <div class="card">
+            <img src="image/poster/festival_jomblo_run.png">
+        <div class="card-section">
+        <h4><b>Jomblo Virtual Marathon</b></h4>
+        <h7 style="padding top: 5px; color: #fb7221"><b>Olahraga</b></h7>
+          <p> <b>Tanggal dan Waktu</b>
+            <br><img src="image/calendar.png" width="15"> 06 Mei 2018
+            <br><img src="image/clock.png" width="15"> 14.00 - 18.00
+            <br><b>Lokasi</b>
+            <br><img src="image/location.png" width="15"> Ciputra Artpreneur
+          </p>
+            </div>
+          </div>
+        </div>
+        <div class="cell"style="padding-top: 15px">
+          <div class="card">
+            <img src="image/poster/teather_midsummer.png">
+        <div class="card-section">
+        <h4><b>A Midsummer Night's Dream</b></h4>
+        <h7 style="padding top: 5px; color: #fb7221"><b>Teather</b></h7>
+          <p> <b>Tanggal dan Waktu</b>
+            <br><img src="image/calendar.png" width="15"> 30 Juni 2018
+            <br><img src="image/clock.png" width="15"> 19.00 - Selesai
+            <br><b>Lokasi</b>
+            <br><img src="image/location.png" width="15"> Bramall Hall
+          </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    <div class="grid-container">
+      <h2 style="color: #002952;margin-top: 3%">Hot Event</h2>
+      <div style="width: 1170px; height:0px; border:1px lightgray solid;"></div>
+    </div>
+    <div class="grid-container">
+      <h3 style="padding-top: 5px;color: #002952;padding-bottom: 15px"></h3>
+      <div class="grid-x grid-margin-x small-up-1 medium-up-4">
+        <div class="cell">
+          <a href="brighter2.html">
+            <div class="card">
+              <img src="image/poster/brighter.jpg">
+              <div class="card-section">
+              <h4><b>JPCC Brighter</b></h4>
+                <h7 style="padding top: 5px; color: #fb7221"><b>Konser</b></h7>
+                <p><b>Tanggal dan Waktu</b>
+                  <br><img src="image/calendar.png" width="15"> 30 Juli 2020
+                  <br><img src="image/clock.png" width="15"> 09.00 - 21.00
+                  <br><b>Lokasi</b>
+                  <br><img src="image/location.png" width="15"> Istora Senayan Gelora Bung Karno (GBK), DKI Jakarta</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="cell">
+          <div class="card">
+            <img src="image/poster/festival_marathon.png">
+        <div class="card-section">
+        <h4><b>City Marathon</b></h4>
+        <h7 style="padding top: 5px; color: #fb7221"><b>Olahraga</b></h7>
+          <p> <b>Tanggal dan Waktu</b>
+            <br><img src="image/calendar.png" width="15"> 26 Oktober 2014
+            <br><img src="image/clock.png" width="15"> 07.00 - Selesai
+            <br><b>Lokasi</b>
+            <br><img src="image/location.png" width="15"> National Monument (MONAS), DKI Jakarta
+          </p>
+            </div>
+          </div>
+        </div>
+        <div class="cell">
+          <div class="card">
+            <img src="image/poster/konser_night.png">
+        <div class="card-section">
+        <h4><b>Concert Night</b></h4>
+          <h7 style="padding top: 5px; color: #fb7221"><b>Konser</b></h7>
+          <p> <b>Tanggal dan Waktu</b>
+            <br><img src="image/calendar.png" width="15"> 23 September 2018
+            <br><img src="image/clock.png" width="15"> 10.00 - 15.00
+            <br><b>Lokasi</b>
+            <br><img src="image/location.png" width="15"> 123 Avenue ST, New Yorlk, United States
+          </p>
+            </div>
+          </div>
+        </div>
+        <div class="cell">
+          <div class="card">
+            <img src="image/poster/workshop_finansial.png">
+        <div class="card-section">
+        <h4><b>Workshop Finance</b></h4>
+        <h7 style="padding top: 5px; color: #fb7221"><b>Workshop</b></h7>
+          <p style="padding-bottom: 25px"> <b>Tanggal dan Waktu</b>
+            <br><img src="image/calendar.png" width="15"> 30 Maret 2020
+            <br><img src="image/clock.png" width="15"> 20.00 - Selesai
+            <br><b>Lokasi</b>
+            <br><img src="image/calendar.png" width="15"> Link WEB
+          </p>
+            </div>
+          </div>
+        </div>
+        <div class="cell" style="padding-top: 15px">
+          <div class="card">
+            <img src="image/poster/konser_budaya_alam.png">
+        <div class="card-section">
+        <h4><b>Konser Budaya Alam Nusantara</b></h4>
+        <h7 style="padding top: 5px; color: #fb7221"><b>Konser</b></h7>
+          <p> <b>Tanggal dan Waktu</b>
+            <br><img src="image/calendar.png" width="15"> 06 Mei 2018
+            <br><img src="image/clock.png" width="15"> 14.00 - 18.00
+            <br><b>Lokasi</b>
+            <br><img src="image/location.png" width="15"> Ciputra Artpreneur
+          </p>
+            </div>
+          </div>
+        </div>
+        <div class="cell"style="padding-top: 15px">
+          <div class="card">
+            <img src="image/poster/dramus_peron.png">
+        <div class="card-section">
+        <h4><b>Drama Musikal Peron</b></h4>
+        <h7 style="padding top: 5px; color: #fb7221"><b>Drama Musikal</b></h7>
+          <p> <b>Tanggal dan Waktu</b>
+            <br><img src="image/calendar.png" width="15"> 11 & 12 Oktober 2019
+            <br><img src="image/clock.png" width="15">14.30 - 19.30
+            <br><b>Lokasi</b>
+            <br><img src="image/location.png" width="15"> Graha Bhakti Budaya,Jakarta
+          </p>
+            </div>
+          </div>
+        </div>
+        <div class="cell"style="padding-top: 15px">
+          <div class="card">
+            <img src="image/poster/festival_jomblo_run.png">
+        <div class="card-section">
+        <h4><b>Jomblo Virtual Run</b></h4>
+        <h7 style="padding top: 5px; color: #fb7221"><b>Olahraga</b></h7>
+          <p> <b>Tanggal dan Waktu</b>
+            <br><img src="image/calendar.png" width="15"> 06 Mei 2018
+            <br><img src="image/clock.png" width="15"> 14.00 - 18.00
+            <br><b>Lokasi</b>
+            <br><img src="image/location.png" width="15"> Ciputra Artpreneur
+          </p>
+            </div>
+          </div>
+        </div>
+        <div class="cell"style="padding-top: 15px">
+          <div class="card">
+            <img src="image/poster/teather_midsummer.png">
+        <div class="card-section">
+        <h4><b>A Midsummer Night's Dream</b></h4>
+        <h7 style="padding top: 5px; color: #fb7221"><b>Teather</b></h7>
+          <p> <b>Tanggal dan Waktu</b>
+            <br><img src="image/calendar.png" width="15"> 30 Juni 2018
+            <br><img src="image/clock.png" width="15"> 19.00 - Selesai
+            <br><b>Lokasi</b>
+            <br><img src="image/location.png" width="15"> Bramall Hall
+          </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <a href="event_pembeli2.html">
+      <button class="button button-rounded-hover" style="color:#fb7221;background-color:#ffffff;margin-left: 42%;margin-top: 20px">
+        <b>Event Lainnya</b>
+      </button>
+    </a>
+  </div>
+</div>
+    <footer style="background-color:#002952; color:white; margin-top: 20px;">
+      <div class="grid-x">
+        <div class="cell small-4" style="padding-left: 3%;padding-top: 3%;">
+          <h3>Walkie Ticket</h3>
+          <p style="line-height: 22px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolorem accusantium architecto id quidem, itaque nesciunt quam ducimus atque.</p>
+        </div>
+        <div class="cell small-4"style="padding-left: 3%;padding-top: 3%;">
+          <h4>Contact Info</h4>
+          <p style="margin-top: 15px"><img src="image/logo_location.png"width="20"> Universitas Kristen Satya Wacana, Salatiga </p>
+          <p style="margin-top: 30px"><img src="image/logo_phone.png" width="30">(021) 5555-5555</p>
+          <p style="margin-top: 25px"><img src="image/logo_email.png" width="30"> walkitik555@fakeemail.com</p>
+        </div>
+        <div class="cell small-4"style="padding-left: 3%;padding-top: 3%;">
+          <h4>Find Us</h4>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1978.657577918592!2d110.4990490149292!3d-7.318450961304441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a7831cb73c925%3A0x91e915ff70e2f210!2sSatya%20Wacana%20Christian%20University!5e0!3m2!1sen!2sid!4v1597059973512!5m2!1sen!2sid" width="360" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>
+      <footer style="background-color: #0e2433;padding-top: 2%;padding-bottom: 1px;padding-left: 3%;margin-top: 15px">
+        <p>&copy; 2020 TAS Interaksi Manusia dan Komputer</p>
+      </footer>
+    </footer>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
 </html>

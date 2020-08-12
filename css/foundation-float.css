@@ -1088,7 +1088,6 @@ ul.no-bullet, ol.no-bullet {
 
 .small-up-4 > .column, .small-up-4 > .columns {
   float: left;
-  padding-left: 33%;
   width: 25%; }
   .small-up-4 > .column:nth-of-type(1n), .small-up-4 > .columns:nth-of-type(1n) {
     clear: none; }
@@ -1737,9 +1736,9 @@ ul.no-bullet, ol.no-bullet {
   .button.clear.warning:hover, .button.clear.warning:focus {
     color: #805700; }
   .button.clear.alert, .button.clear.alert.disabled, .button.clear.alert[disabled], .button.clear.alert.disabled:hover, .button.clear.alert[disabled]:hover, .button.clear.alert.disabled:focus, .button.clear.alert[disabled]:focus {
-    color: #cc4b37; }
+    color: #767676; }
   .button.clear.alert:hover, .button.clear.alert:focus {
-    color: #67251a; }
+    color: #fefefe; }
   .button.disabled, .button[disabled] {
     opacity: 0.25;
     cursor: not-allowed; }
